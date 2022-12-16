@@ -1,17 +1,20 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import Image from 'next/image'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: (
+    <>
+      <Image style={{ borderRadius: 50 }} src="/logo.jpg" alt="logo" width={36} height={36} />
+      <span style={{ marginLeft: '.4em', fontWeight: 800 }}>Zerodot618's Web3 Docs</span>
+    </>
+  ),
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/zerodot618/web3-world-doc',
   },
-  chat: {
-    link: 'https://discord.com',
-  },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/zerodot618/web3-world-doc',
   footer: {
-    text: 'Nextra Docs Template',
+    text: <span>&copy; 2022 ZeroDot618. All right reserved.</span>,
   },
 }
 
