@@ -3,5 +3,6 @@
     "02-btc-data-struct": "02-BTC-数据结构",
     "03-btc-consensus-protocol": "03-BTC-共识协议",
     "04-btc-achieve": "04-BTC-实现",
-    "05-btc-network": "05-BTC-网络"
+    "05-btc-network": "05-BTC-网络",
+    "06-btc-mining-difficulty": "06-BTC-挖矿难度"
 }
