@@ -6,5 +6,6 @@
     "05-btc-network": "05-BTC-网络",
     "06-btc-mining-difficulty": "06-BTC-挖矿难度",
     "07-btc-mining": "07-BTC-挖矿",
-    "08-btc-scripts": "08-BTC-脚本"
+    "08-btc-scripts": "08-BTC-脚本",
+    "09-btc-fork": "09-BTC-分叉"
 }
