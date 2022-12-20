@@ -11,11 +11,11 @@ import Image from 'next/image';
 以太坊平台的出现让发行代币提供了方便，包括以前说的 eos，这个在上线之前也是作为以太坊上的代币形式，上线的意思是有自己的基础链了，不用依附在以太坊上了。以太坊发行代币的标准为
 **ERC20(Ethereum Request for Comments)**。
 
-<Image src="/xiaozhen/23-eth-beauty-chain-1.png" alt="eth-beauty-chain-1" width={720} height={720} />
+<Image src="/xiaozhen/24-eth-beauty-chain-1.png" alt="eth-beauty-chain-1" width={720} height={720} />
 
 美链的 batchTransfer 的函数：
 
-<Image src="/xiaozhen/23-eth-beauty-chain-2.png" alt="eth-beauty-chain-2" width={720} height={720} />
+<Image src="/xiaozhen/24-eth-beauty-chain-2.png" alt="eth-beauty-chain-2" width={720} height={720} />
 
 这个函数有两个参数，第一个参数是一个数组，接收者地址的数组，第二个参数value是转账的金额，给每个人转多少。
 
@@ -35,22 +35,22 @@ balances[msg.sender] = balances[msg.sender].sub(amount); // 把发起调用的�
 
 ## 攻击细节
 
-<Image src="/xiaozhen/23-eth-beauty-chain-3.png" alt="eth-beauty-chain-3" width={720} height={720} />
+<Image src="/xiaozhen/24-eth-beauty-chain-3.png" alt="eth-beauty-chain-3" width={720} height={720} />
 
 第0号参数是 `_receivers` 数组在参数列表中的位置，这里是16进制的，0040对应的是4乘16=64，第一个参数出现在第64个字节的位置，一行有64个数字，1个16进制的数字需要用4个二进制的数字来表示，
 64乘4=256位，也就是说一行有32个字节。所以是从 [2] 行开始表示 receivers，表示了数组的长度是2，[3] [4]两行是接受的地址。[1] 行表示value的值。注意，[1] 行的参数是80000…再乘以接收者2个，算出来的溢出正好是0。
 
-<Image src="/xiaozhen/23-eth-beauty-chain-4.png" alt="eth-beauty-chain-4" width={720} height={720} />
+<Image src="/xiaozhen/24-eth-beauty-chain-4.png" alt="eth-beauty-chain-4" width={720} height={720} />
 
 红框中可以看到每个地址都是接收了很大数量的代币。
 
 ## 攻击结果
 
-<Image src="/xiaozhen/23-eth-beauty-chain-5.png" alt="eth-beauty-chain-5" width={720} height={720} />
+<Image src="/xiaozhen/24-eth-beauty-chain-5.png" alt="eth-beauty-chain-5" width={720} height={720} />
 
 攻击使代币的价格造成致命性的打击，差不多快要归零了。
 
-<Image src="/xiaozhen/23-eth-beauty-chain-6.png" alt="eth-beauty-chain-6" width={720} height={720} />
+<Image src="/xiaozhen/24-eth-beauty-chain-6.png" alt="eth-beauty-chain-6" width={720} height={720} />
 
 代币上市的交易所在发生攻击后暂停提币的功能，并且回滚了交易。
 
@@ -61,6 +61,6 @@ C语言里，两个数相乘会有一定的精度损失，再除以一个数，�
 
 `batchTransfer`的加法和减法都用的**safeMath**库，只有乘法不小心没有使用，结果酿成了悲剧。曾经有人怀疑是不是故意的，但从事件的结果来看又不像使故意的。
 
-<Image src="/xiaozhen/23-eth-beauty-chain-7.png" alt="eth-beauty-chain-7" width={720} height={720} />
+<Image src="/xiaozhen/24-eth-beauty-chain-7.png" alt="eth-beauty-chain-7" width={720} height={720} />
 
 `mul()` 函数中，先用`a*b = c`，再用`c/a`看看是否等于`b`，如果发生溢出的话，`assert()`会抛出异常。
