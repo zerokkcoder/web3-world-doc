@@ -13,5 +13,6 @@
     "12-btc-thinking": "12-BTC-思考",
     "13-eth-introduction": "13-ETH-概述",
     "14-eth-account": "14-ETH-账户",
-    "15-eth-state-tree": "15-ETH-状态树"
+    "15-eth-state-tree": "15-ETH-状态树",
+    "16-eth-trans-recipt-tree": "16-ETH-交易树和收据树"
 }
