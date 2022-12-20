@@ -18,5 +18,6 @@
     "17-eth-ghost": "17-ETH-GHOST协议",
     "18-eth-mining-algorithm": "18-ETH-挖矿算法",
     "19-eth-mining-difficulty": "19-ETH-挖矿难度",
-    "20-eth-pos": "20-ETH-权益证明"
+    "20-eth-pos": "20-ETH-权益证明",
+    "21-eth-smart-contract": "21-ETH-智能合约"
 }
