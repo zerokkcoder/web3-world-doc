@@ -16,5 +16,6 @@
     "15-eth-state-tree": "15-ETH-状态树",
     "16-eth-trans-recipt-tree": "16-ETH-交易树和收据树",
     "17-eth-ghost": "17-ETH-GHOST协议",
-    "18-eth-mining-algorithm": "18-ETH-挖矿算法"
+    "18-eth-mining-algorithm": "18-ETH-挖矿算法",
+    "19-eth-mining-difficulty": "19-ETH-挖矿难度"
 }
