@@ -4,5 +4,6 @@
     "type": "separator",
     "title": "基础知识"
   },
-  "xiaozhen": "区块链技术与应用"
+  "xiaozhen": "区块链技术与应用",
+  "data-structure-and-algorithm": "数据结构与算法"
 }
