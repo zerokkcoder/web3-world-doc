@@ -16,6 +16,9 @@ const config: DocsThemeConfig = {
   footer: {
     text: <span>&copy; 2022 ZeroDot618. All right reserved.</span>,
   },
+  sidebar: {
+    defaultMenuCollapseLevel: 0,
+  }
 }
 
 export default config
