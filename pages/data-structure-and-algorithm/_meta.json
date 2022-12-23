@@ -3,5 +3,8 @@
     "02-linked-list": "02-链表",
     "03-sparse-array-and-queue": "03-稀疏数组",
     "04-recursion": "04-递归",
-    "05-sort-algorithm": "05-排序算法"
+    "05-sort-algorithm": "05-排序算法",
+    "06-search-algorithm": "06-查找算法",
+    "07-hash-table": "07-哈希表",
+    "08-tree": "08-树"
 }
