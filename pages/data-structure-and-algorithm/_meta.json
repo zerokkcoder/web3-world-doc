@@ -6,5 +6,8 @@
     "05-sort-algorithm": "05-排序算法",
     "06-search-algorithm": "06-查找算法",
     "07-hash-table": "07-哈希表",
-    "08-tree": "08-树"
+    "08-tree": "08-树",
+    "09-tree-apply": "09-树的应用",
+    "10-graph": "10-图",
+    "11-ten-commonly-used-algorithms": "11-常用的10种算法"
 }
