@@ -1,3 +1,7 @@
 {
-    "01-docker-overview": "01-Docker概述"
+    "01-docker-overview": "01-Docker概述",
+    "02-docker-env-setup": "02-Docker环境搭建",
+    "03-docker-core-component": "03-Docker核心组件",
+    "04-docker-use-case": "04-Docker使用示例",
+    "05-docker-dockerfile": "05-Docker自定义镜像"
 }
