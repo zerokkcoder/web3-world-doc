@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 ## 1. Docker 安装 MySQL
 
 1. 下载 MySQL 镜像：
