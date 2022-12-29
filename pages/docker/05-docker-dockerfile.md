@@ -40,7 +40,7 @@ Dockerfile 文件的第一条指令必须为 FROM 指令。并且，如果在同
 
 ### 3.4 ADD
 
-格式为：`ADD <src><dest>`，复制指定的<src>到容器中的<dest>。
+格式为：`ADD <src> <dest>`，复制指定的`<src>`到容器中的`<dest>`。
 
 ### 3.5 EXPOSE
 
